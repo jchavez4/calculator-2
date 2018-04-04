@@ -31,6 +31,10 @@ def calculator():
                 print multiply(float(tokens[1]), float(tokens[2]))
             elif tokens[0] == "/":
                 print divide(float(tokens[1]), float(tokens[2]))
+            elif tokens[0] == "square":
+                print square(float(tokens[1]))
+            elif tokens[0] == "cube":
+                print cube(float(tokens[1]))
 
 
-calculator()         
+calculator()
