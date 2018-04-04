@@ -61,6 +61,7 @@
 
 def add(num_list):
     """Returns sum of numbers in the list."""
+    
     sum = 0
     for num in num_list:
         sum += num
@@ -69,10 +70,31 @@ def add(num_list):
 
 def subtract(num_list):
     """Returns the difference of numbers in the list."""
+    
     difference = num_list[0]
-    for num in range(1, len(num_list)):
-        difference -= num_list[num]
+    for i in range(1, len(num_list)):
+        difference -= num_list[i]
     return difference
 
-print add([5,2,3])
-print subtract([5,10,10])
+
+def multiply(num_list):
+    """Returns the product of numbers in the list."""
+    
+    product = num_list[0]
+    for i in range(1, len(num_list)):
+        product *= num_list[i]
+    return product
+
+
+def divide(num_list):
+    """Returns the result of numbers in list divided."""
+    
+    result = num_list[0]
+    for i in range(1, len(num_list)):
+        result /= num_list[i]
+    return result
+
+# print add([5,2,3])
+# print subtract([5,10,10])
+print multiply([1, 2, 3])
+print divide([10, 2])
