@@ -94,7 +94,21 @@ def divide(num_list):
         result /= num_list[i]
     return result
 
+
+def square(num_list):
+    """Returns the square of the number in the list."""
+
+    return num_list[0] ** 2
+
+
+def cube(num_list):
+    """Returns the cube of the number in the list."""
+
+    return num_list[0] ** 3
+
 # print add([5,2,3])
 # print subtract([5,10,10])
-print multiply([1, 2, 3])
-print divide([10, 2])
+# print multiply([1, 2, 3])
+# print divide([10, 2])
+print square(5)
+print cube(2)
