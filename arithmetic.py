@@ -110,5 +110,5 @@ def cube(num_list):
 # print subtract([5,10,10])
 # print multiply([1, 2, 3])
 # print divide([10, 2])
-print square(5)
-print cube(2)
+print square([5])
+print cube([2])
