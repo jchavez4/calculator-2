@@ -106,9 +106,20 @@ def cube(num_list):
 
     return num_list[0] ** 3
 
+def power(num_list):
+    """Returns the first number raised to the power of the second number in list."""
+
+    return num_list[0] ** num_list[1]
+
+def mod(num_list):
+    """Returns the remainder of first number/second number"""
+
+    return num_list[0] % num_list[1]
 # print add([5,2,3])
 # print subtract([5,10,10])
 # print multiply([1, 2, 3])
-# print divide([10, 2])
-print square([5])
-print cube([2])
+# # print divide([10, 2])
+# print square([5])
+# print cube([2])
+print power([2, 3])
+print mod([10, 5])
