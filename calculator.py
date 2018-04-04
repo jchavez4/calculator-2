@@ -27,6 +27,8 @@ def calculator():
                 print add(int(tokens[1]), int(tokens[2]))
             elif tokens[0] == "-":
                 print subtract(int(tokens[1]), int(tokens[2]))
+            elif tokens[0] == "*":
+                print multiply(int(tokens[1]), int(tokens[2]))
 
 
 calculator()         
