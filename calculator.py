@@ -29,16 +29,13 @@ def calculator():
             return
         else:
             if tokens[0] == "+":
-                print add(tokens[1])
+                print reduce(lambda x, y: add(x,y), tokens[1])
             elif tokens[0] == "-":
-                print subtract(tokens[1])
+                print reduce(lambda x, y: subtract(x,y), tokens[1])
             elif tokens[0] == "*":
-                print multiply(tokens[1])
+                print reduce(lambda x, y: multiply(x,y), tokens[1])
             elif tokens[0] == "/":
-                if len(tokens[1]) > 2:
-                    print "Divide only takes two numbers."
-                else:
-                    print divide(tokens[1])
+                    print reduce(lambda x, y: divide(x,y), tokens[1])
             elif tokens[0] == "square":
                 if len(tokens[1]) > 1:
                     print "Square only takes one number."
