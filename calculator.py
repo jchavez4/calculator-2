@@ -12,7 +12,12 @@ from arithmetic import *
 # Your code goes here
 def tokenize_input(input_str):
     """this will return the split input str"""
-    return input_str.split(" ")
+    
+    int_list = []
+    split_str = input_str.split(" ")
+    for i in range(1, len(split_str)):
+        int_list.append(split_str[i])
+    return split_str[0], int_list
 
 
 def calculator():
@@ -24,21 +29,36 @@ def calculator():
             return
         else:
             if tokens[0] == "+":
-                print add(float(tokens[1]), float(tokens[2]))
+                print add(tokens[1])
             elif tokens[0] == "-":
-                print subtract(float(tokens[1]), float(tokens[2]))
+                print subtract(tokens[1])
             elif tokens[0] == "*":
-                print multiply(float(tokens[1]), float(tokens[2]))
+                print multiply(tokens[1])
             elif tokens[0] == "/":
-                print divide(float(tokens[1]), float(tokens[2]))
+                if len(tokens[1]) > 2:
+                    print "Divide only takes two numbers."
+                else:
+                    print divide(tokens[1])
             elif tokens[0] == "square":
-                print square(float(tokens[1]))
+                if len(tokens[1]) > 1:
+                    print "Square only takes one number."
+                else:
+                    print square(tokens[1])
             elif tokens[0] == "cube":
-                print cube(float(tokens[1]))
+                if len(tokens[1]) > 1:
+                    print "Cube only takes one number."
+                else:
+                    print cube(tokens[1])
             elif tokens[0] == "pow":
-                print power(float(tokens[1]), float(tokens[2]))
+                if len(tokens[1]) > 2:
+                    print "Pow only takes two numbers."
+                else:
+                    print power(tokens[1])
             elif tokens[0] == "mod":
-                print mod(float(tokens[1]), float(tokens[2]))
+                if len(tokens[1]) > 2:
+                    print "Mod only takes two numbers."
+                else:
+                    print mod(tokens[1])
             else:
                 print "Please enter valid command."
 
