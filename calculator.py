@@ -16,7 +16,7 @@ def tokenize_input(input_str):
     int_list = []
     split_str = input_str.split(" ")
     for i in range(1, len(split_str)):
-        int_list.append(split_str[i])
+        int_list.append(float(split_str[i]))
     return split_str[0], int_list
 
 

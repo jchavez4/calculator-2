@@ -64,53 +64,53 @@ def add(num_list):
     
     sum = 0
     for num in num_list:
-        sum += float(num)
+        sum += num
     return sum
 
 
 def subtract(num_list):
     """Returns the difference of numbers in the list."""
     
-    difference = float(num_list[0])
+    difference = num_list[0]
     for i in range(1, len(num_list)):
-        difference -= float(num_list[i])
+        difference -= num_list[i]
     return difference
 
 
 def multiply(num_list):
     """Returns the product of numbers in the list."""
     
-    product = float(num_list[0])
+    product = num_list[0]
     for i in range(1, len(num_list)):
-        product *= float(num_list[i])
+        product *= num_list[i]
     return product
 
 
 def divide(num_list):
     """Returns the result of numbers in list divided."""
     
-    return float(num_list[0]) / float(num_list[1])
+    return num_list[0] / num_list[1]
 
 
 def square(num_list):
     """Returns the square of the number in the list."""
 
-    return float(num_list[0]) ** 2
+    return num_list[0] ** 2
 
 
 def cube(num_list):
     """Returns the cube of the number in the list."""
 
-    return float(num_list[0]) ** 3
+    return num_list[0] ** 3
 
 
 def power(num_list):
     """Returns the first number raised to the power of the second number in list."""
 
-    return float(num_list[0]) ** float(num_list[1])
+    return num_list[0] ** num_list[1]
 
 
 def mod(num_list):
     """Returns the remainder of first number/second number"""
 
-    return float(num_list[0]) % float(num_list[1])
+    return num_list[0] % num_list[1]
